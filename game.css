@@ -1,0 +1,57 @@
+.game {
+  width: vw;
+  height: 500px;
+  border: 1px solid black;
+}
+
+#character {
+  width: 200px;
+  height: 200px;
+  background-image: url(./characters/monika.gif);
+  background-size: 200px 200px;
+  position: relative;
+  top: 300px;
+}
+
+.jump {
+  animation: jump 0.7s linear;
+}
+
+@keyframes jump {
+  0% {
+    top: 300px;
+  }
+  33% {
+    top: 170px;
+  }
+  50% {
+    top: 130px;
+  }
+  77% {
+    top: 170px;
+  }
+  100% {
+    top: 300px;
+  }
+}
+
+#pen {
+  width: 150px;
+  height: 150px;
+  position: relative;
+  top: 170px;
+  left: 1400px;
+  background-image: url(./pen.png);
+  background-size: 150px 150px;
+  animation: obstacle 2s infinite linear;
+}
+
+
+@keyframes obstacle{
+    0%{
+        left: 1400px;
+    }
+    100%{
+        left: -80px;
+    }
+}
