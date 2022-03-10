@@ -11,12 +11,14 @@ function jump() {
 }
 
 let Alive = setInterval(function () {
-  let characterTop = parse.Int(
+  let characterTop = parseInt(
     window.getComputedStyle(character).getPropertyValue("top")
   );
   let penLeft = parseInt(window.getComputedStyle(pen).getPropertyValue("left"));
 
-  if (penLeft < 50 && penLeft > 0 && characterTop >= 140) {
+  console.log("penLeft: " + penLeft);
+  console.log("characterTop: " + characterTop);
+  if (penLeft < 100 && penLeft > 0 && characterTop >= 200) {
     alert("YOU GOT PEN PIERCED!");
   }
 }, 10);
