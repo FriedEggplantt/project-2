@@ -86,3 +86,23 @@ header{
         left: -80px;
     }
 }
+
+h1{
+    color: white;
+    font-family: monospace;
+    margin-left: 20px;
+    font-size: 40px;
+}
+
+#coin{
+    width: 150px;
+    height: 150px;
+    position: relative;
+    top: -150px;
+    left: 1000px;
+    background-image: url(./coin.gif);
+    animation: obstacle 2s infinite linear;
+    background-size: 150px 150px;
+    animation: obstacle 2s infinite linear;
+    background-color: none;
+}
